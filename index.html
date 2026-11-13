@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ht">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0756b8">
+<title>Mache Lakay — Achte. Vann. Fè biznis.</title>
+<style>
+:root{--blue:#0756b8;--deep:#07366d;--pale:#eaf3ff;--ink:#14243a;--muted:#66758a;--line:#dce5f0;--bg:#f5f8fc;--white:#fff;--green:#12834b}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink)}button,input,select,textarea{font:inherit}button{cursor:pointer}
+.top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}.bar{max-width:1180px;margin:auto;padding:13px 18px;display:flex;gap:16px;align-items:center}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--deep);font-weight:900;font-size:21px;white-space:nowrap}.logo{width:42px;height:42px;border-radius:13px;background:linear-gradient(145deg,#0b74e8,#063d83);display:grid;place-items:center;color:#fff;font-size:24px;box-shadow:0 5px 14px #0756b833}.search{flex:1;display:flex;min-width:120px}.search input{width:100%;border:1px solid var(--line);border-radius:12px 0 0 12px;padding:12px 14px;outline:none}.search button{border:0;background:var(--blue);color:#fff;padding:0 18px;border-radius:0 12px 12px 0}.navbtn{border:1px solid var(--line);background:#fff;color:var(--deep);padding:10px 13px;border-radius:11px;font-weight:700;white-space:nowrap}.primary{background:var(--blue);color:#fff;border:0;border-radius:11px;padding:12px 17px;font-weight:800}.primary:hover{background:#06489a}.wrap{max-width:1180px;margin:22px auto;padding:0 18px}.hero{background:linear-gradient(115deg,#06366f,#0874df);color:#fff;border-radius:22px;padding:34px;display:grid;grid-template-columns:1.25fr .75fr;gap:18px;align-items:center;overflow:hidden;box-shadow:0 14px 35px #0b4c9222}.hero h1{font-size:clamp(30px,5vw,49px);line-height:1.04;margin:9px 0 12px}.hero p{font-size:17px;line-height:1.55;color:#e5f1ff;max-width:570px}.hero .tag{font-weight:800;letter-spacing:.12em;color:#a9d2ff;font-size:12px}.hero-art{font-size:clamp(65px,11vw,125px);text-align:center;filter:drop-shadow(0 12px 14px #001b4266)}.trust{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px;color:#e5f1ff;font-size:13px}.trust span{display:flex;gap:7px;align-items:center}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:10px;margin:27px 0 13px}.sectionhead h2{margin:0;font-size:22px}.muted{color:var(--muted);font-size:13px}.cats{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.cat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 8px;text-align:center;font-weight:700;color:var(--deep);font-size:13px}.cat span{display:block;font-size:26px;margin-bottom:7px}.cat.active{border-color:var(--blue);background:var(--pale);box-shadow:0 0 0 2px #0756b81a}.toolbar{display:flex;justify-content:space-between;gap:10px;align-items:center;margin:16px 0}.toolbar select{padding:10px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.product{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 4px 14px #183b6508}.photo{height:155px;background:linear-gradient(135deg,#e8f1fc,#f8fbff);display:grid;place-items:center;font-size:65px;position:relative}.photo small{position:absolute;top:10px;left:10px;background:#eaf3ff;color:var(--blue);padding:5px 8px;border-radius:20px;font-size:10px;font-weight:800}.pbody{padding:13px}.pbody h3{font-size:15px;margin:0 0 8px}.price{color:var(--blue);font-weight:900;font-size:17px}.place{font-size:12px;color:var(--muted);margin-top:8px}.pbody button{width:100%;margin-top:12px;padding:10px;border:1px solid var(--line);border-radius:9px;background:#fff;color:var(--blue);font-weight:800}.empty{background:#fff;border:1px dashed #b8c8dc;border-radius:15px;padding:35px;text-align:center;color:var(--muted);grid-column:1/-1}.note{background:#fff8e8;border:1px solid #f4dfad;color:#72520b;padding:12px 14px;border-radius:12px;font-size:13px;line-height:1.45;margin-top:20px}.footer{margin-top:40px;background:#082f5e;color:#d8e8fb;padding:28px 18px}.footinner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer strong{color:#fff}.modal{position:fixed;inset:0;background:#07182bb8;display:none;align-items:center;justify-content:center;padding:15px;z-index:10}.modal.open{display:flex}.dialog{background:#fff;border-radius:18px;padding:22px;width:min(520px,100%);max-height:92vh;overflow:auto}.dialog h2{margin:0 0 5px}.field{display:grid;gap:6px;margin:12px 0}.field label{font-size:13px;font-weight:800}.field input,.field select,.field textarea{padding:11px;border:1px solid var(--line);border-radius:9px;width:100%;background:#fff}.field textarea{min-height:75px;resize:vertical}.actions{display:flex;gap:9px;justify-content:flex-end;margin-top:17px}.secondary{border:1px solid var(--line);background:#fff;padding:11px 14px;border-radius:10px;font-weight:700}.close{float:right;border:0;background:#eef3f9;border-radius:50%;width:32px;height:32px;font-size:18px}
+@media(max-width:850px){.products{grid-template-columns:repeat(3,1fr)}.cats{grid-template-columns:repeat(3,1fr)}.hero{grid-template-columns:1fr}.hero-art{display:none}.navbtn{display:none}}
+@media(max-width:560px){.bar{gap:8px;padding:10px}.brand{font-size:16px}.logo{width:36px;height:36px}.search input{padding:10px 8px;font-size:13px}.search button{padding:0 12px}.wrap{padding:0 12px;margin:14px auto}.hero{padding:23px 20px;border-radius:17px}.hero p{font-size:15px}.products{grid-template-columns:repeat(2,1fr);gap:10px}.photo{height:120px;font-size:51px}.pbody{padding:10px}.pbody h3{font-size:13px}.price{font-size:15px}.toolbar{align-items:flex-start;flex-direction:column}.cats{gap:7px}.cat{padding:11px 4px;font-size:11px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="bar">
+<a class="brand" href="#"><span class="logo">⌂</span><span>MACHE LAKAY</span></a>
+<form class="search" id="searchForm"><input id="searchInput" placeholder="Chèche pwodwi, kategori, oswa vil..." aria-label="Chèche pwodwi"><button>⌕</button></form>
+<button class="navbtn" id="allBtn">Tout pwodwi</button><button class="primary" id="openSell">+ Vann</button>
+</div></header>
+<main class="wrap">
+<section class="hero">
+<div><div class="tag">BYENVENI SOU MACHE LAKAY</div><h1>Achte. Vann.<br>Fè biznis.</h1><p>Jwenn bon pwodwi, dekouvri bon pri, epi konekte dirèkteman ak vandè yo ann Ayiti ak lòt peyi.</p><button class="primary" id="browseBtn">Kòmanse achte →</button><div class="trust"><span>✓ Fasil pou itilize</span><span>✓ Kontakte vandè dirèk</span><span>✓ Pou plizyè peyi</span></div></div>
+<div class="hero-art" aria-hidden="true">🛍️ 📱 👟</div>
+</section>
+<div class="sectionhead"><div><h2>Browse kategori yo</h2><div class="muted">Chwazi sa w ap chèche</div></div></div>
+<section class="cats" id="categories">
+<button class="cat active" data-cat="Tout"><span>🛍️</span>Tout</button>
+<button class="cat" data-cat="Rad & Soulye"><span>👕</span>Rad & Soulye</button>
+<button class="cat" data-cat="Telefòn"><span>📱</span>Telefòn</button>
+<button class="cat" data-cat="Kay & Mèb"><span>🛋️</span>Kay & Mèb</button>
+<button class="cat" data-cat="Machin"><span>🚗</span>Machin</button>
+<button class="cat" data-cat="Bote"><span>🧴</span>Bote</button>
+<button class="cat" data-cat="Espò"><span>⚽</span>Espò</button>
+<button class="cat" data-cat="Manje"><span>🍲</span>Manje</button>
+<button class="cat" data-cat="Lòt"><span>📦</span>Lòt pwodwi</button>
+</section>
+<div class="sectionhead"><div><h2 id="listTitle">Pwodwi an vedèt</h2><div class="muted">Egzanp pou montre kijan sit la ap mache</div></div></div>
+<div class="toolbar"><span class="muted" id="count">3 pwodwi</span><select id="sort"><option value="new">Pi resan an premye</option><option value="low">Pri: pi ba an premye</option><option value="high">Pri: pi wo an premye</option></select></div>
+<section class="products" id="products"></section>
+<div class="note"><strong>Enpòtan:</strong> Sa a se premye pwototip Mache Lakay la. Pwodwi ki parèt yo se egzanp sèlman. Pa gen peman oswa livrezon otomatik ki aktive. Verifye pwodwi ak vandè yo anvan nenpòt tranzaksyon.</div>
+</main>
+<footer class="footer"><div class="footinner"><div><strong>MACHE LAKAY</strong><br>Achte. Vann. Fè biznis.</div><div>Premye vèsyon demonstrasyon an<br><small>Kontakte vandè a dirèkteman pou plis enfòmasyon.</small></div></div></footer>
+
+<div class="modal" id="sellModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+<div class="dialog"><button class="close" id="closeModal" aria-label="Fèmen">×</button><h2 id="modalTitle">Mete pwodwi an vant</h2><p class="muted">Ranpli enfòmasyon pwodwi a. Li pral parèt sou aparèy sa a sèlman nan pwototip sa a.</p>
+<form id="sellForm">
+<div class="field"><label for="pname">Non pwodwi a *</label><input id="pname" required maxlength="70" placeholder="Egzanp: Soulye espò"></div>
+<div class="field"><label for="pcat">Kategori *</label><select id="pcat"><option>Rad & Soulye</option><option>Telefòn</option><option>Kay & Mèb</option><option>Machin</option><option>Bote</option><option>Espò</option><option>Manje</option><option>Lòt</option></select></div>
+<div class="field"><label for="pprice">Pri *</label><input id="pprice" required type="number" min="0" step="0.01" placeholder="Egzanp: 2500"></div>
+<div class="field"><label for="pcurrency">Lajan</label><select id="pcurrency"><option>HTG</option><option>USD</option><option>DOP</option><option>EUR</option></select></div>
+<div class="field"><label for="pcountry">Peyi *</label><input id="pcountry" required value="Ayiti"></div>
+<div class="field"><label for="pcity">Vil</label><input id="pcity" placeholder="Egzanp: Okap"></div>
+<div class="field"><label for="pemoji">Ti senbòl pou pwodwi a</label><select id="pemoji"><option>📦</option><option>👟</option><option>👕</option><option>📱</option><option>🛋️</option><option>🚗</option><option>🧴</option><option>⚽</option><option>🍲</option></select></div>
+<div class="field"><label for="pwhatsapp">WhatsApp vandè (opsyonèl)</label><input id="pwhatsapp" placeholder="Egzanp: +509XXXXXXXX"></div>
+<div class="field"><label for="pdesc">Deskripsyon</label><textarea id="pdesc" placeholder="Bay detay sou pwodwi a..."></textarea></div>
+<div class="actions"><button type="button" class="secondary" id="cancelModal">Anile</button><button class="primary" type="submit">Pibliye anons tès</button></div>
+</form></div></div>
+<script>
+const demo=[
+{id:'d1',name:'Soulye espò (egzanp)',cat:'Rad & Soulye',price:60,currency:'USD',country:'Ayiti',city:'Pòtoprens',emoji:'👟',demo:true},
+{id:'d2',name:'Telefòn Samsung (egzanp)',cat:'Telefòn',price:120,currency:'USD',country:'Ayiti',city:'Kap Ayisyen',emoji:'📱',demo:true},
+{id:'d3',name:'Chemiz gason (egzanp)',cat:'Rad & Soulye',price:25,currency:'USD',country:'Repiblik Dominikèn',city:'Santo Domingo',emoji:'👕',demo:true}
+];
+let userProducts=[];try{userProducts=JSON.parse(localStorage.getItem('ml_products')||'[]')}catch(e){}
+let activeCat='Tout',query='';
+const productsEl=document.getElementById('products');
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function render(){
+ let list=[...userProducts,...demo].filter(p=>(activeCat==='Tout'||p.cat===activeCat)&&(`${p.name} ${p.cat} ${p.city||''} ${p.country||''}`).toLowerCase().includes(query.toLowerCase()));
+ const sort=document.getElementById('sort').value;if(sort==='low')list.sort((a,b)=>a.price-b.price);if(sort==='high')list.sort((a,b)=>b.price-a.price);
+ document.getElementById('count').textContent=list.length+' pwodwi';
+ productsEl.innerHTML=list.length?list.map(p=>`<article class="product"><div class="photo"><small>${p.demo?'EGZANP':'ANONS OU'}</small>${esc(p.emoji||'📦')}</div><div class="pbody"><h3>${esc(p.name)}</h3><div class="price">${Number(p.price).toLocaleString()} ${esc(p.currency)}</div><div class="place">📍 ${esc(p.city||'Vil pa presize')}, ${esc(p.country||'Peyi pa presize')}</div>${p.desc?`<div class="muted" style="margin-top:7px">${esc(p.desc)}</div>`:''}<button onclick="contactSeller('${esc(p.whatsapp||'')}','${esc(p.name)}')">Kontakte vandè</button></div></article>`).join(''):'<div class="empty">Pa gen pwodwi nan kategori/rechèch sa a. Eseye yon lòt mo oswa mete yon anons tès.</div>';
+}
+function contactSeller(phone,name){if(phone&&/^[+0-9 ()-]{7,20}$/.test(phone)){const n=phone.replace(/\D/g,'');location.href='https://wa.me/'+n+'?text='+encodeURIComponent('Bonjou, mwen enterese nan '+name+' sou Mache Lakay. Èske li disponib?')}else{alert('Sa a se yon anons demonstrasyon oswa vandè a poko mete WhatsApp li.');}}
+document.querySelectorAll('.cat').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.cat').forEach(x=>x.classList.remove('active'));b.classList.add('active');activeCat=b.dataset.cat;render()}));
+document.getElementById('searchForm').addEventListener('submit',e=>{e.preventDefault();query=document.getElementById('searchInput').value.trim();render()});
+document.getElementById('sort').addEventListener('change',render);
+document.getElementById('allBtn').onclick=()=>{activeCat='Tout';query='';document.getElementById('searchInput').value='';document.querySelectorAll('.cat').forEach(x=>x.classList.toggle('active',x.dataset.cat==='Tout'));render()};
+document.getElementById('browseBtn').onclick=()=>document.getElementById('categories').scrollIntoView({behavior:'smooth'});
+const modal=document.getElementById('sellModal');function openModal(){modal.classList.add('open')}function closeModal(){modal.classList.remove('open')}
+document.getElementById('openSell').onclick=openModal;document.getElementById('closeModal').onclick=closeModal;document.getElementById('cancelModal').onclick=closeModal;
+modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
+document.getElementById('sellForm').addEventListener('submit',e=>{e.preventDefault();const p={id:'u'+Date.now(),name:document.getElementById('pname').value.trim(),cat:document.getElementById('pcat').value,price:Number(document.getElementById('pprice').value),currency:document.getElementById('pcurrency').value,country:document.getElementById('pcountry').value.trim(),city:document.getElementById('pcity').value.trim(),emoji:document.getElementById('pemoji').value,whatsapp:document.getElementById('pwhatsapp').value.trim(),desc:document.getElementById('pdesc').value.trim(),demo:false};userProducts.unshift(p);try{localStorage.setItem('ml_products',JSON.stringify(userProducts))}catch(err){alert('Navigatè a pa t kapab sove anons lan.');}document.getElementById('sellForm').reset();document.getElementById('pcountry').value='Ayiti';closeModal();activeCat='Tout';document.querySelectorAll('.cat').forEach(x=>x.classList.toggle('active',x.dataset.cat==='Tout'));render();window.scrollTo({top:document.querySelector('.sectionhead').offsetTop,behavior:'smooth'});alert('Anons tès ou a parèt sou aparèy sa a. Pou piblikasyon reyèl, n ap bezwen konekte sit la ak yon baz done sou entènèt.');});
+render();
+</script>
+</body></html>
